@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global transitions for background and text color */
+html,
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Global font styles */
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Global link hover effect */
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  transition: color 0.5s;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(180deg, #ff008c 0%, #00ffff 100%);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
