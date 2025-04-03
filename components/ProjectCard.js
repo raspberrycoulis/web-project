@@ -1,9 +1,18 @@
 // components/ProjectCard.js
+import Image from 'next/image';
+
 const ProjectCard = ({ title, description, imageUrl, link }) => {
   return (
     <div className="group relative bg-white shadow-lg rounded overflow-hidden transform transition-all duration-500 hover:scale-105 filter hover:brightness-90">
       {imageUrl && (
-        <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+        <div className="relative w-full h-48">
+          <Image 
+            src={imageUrl} 
+            alt={title} 
+            fill
+            className="object-cover"
+          />
+        </div>
       )}
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
@@ -28,4 +37,4 @@ const ProjectCard = ({ title, description, imageUrl, link }) => {
   )
 }
 
-export default ProjectCard
+export default ProjectCard;
