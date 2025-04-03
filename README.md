@@ -44,7 +44,7 @@ This is a modern, responsive portfolio website built with [Next.js](https://next
    npm run build
    ```
 
-After building, run the server with:
+5. **After building, run the server with:**
 
    ```bash
    npm start
