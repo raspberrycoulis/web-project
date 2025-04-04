@@ -22,8 +22,8 @@ This is a modern, responsive portfolio website built with [Next.js](https://next
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/raspberrycoulis/web-project.git
+   cd web-project
    ```
 
 2. **Install NPM modules:**
